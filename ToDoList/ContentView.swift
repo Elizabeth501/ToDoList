@@ -10,14 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+            HStack{
+                Text("To Do List")
+                    .font(.system(size:40))
+                    .fontWeight(.heavy)
+                Spacer()
+                Button {
+                } label: {
+                    Text("+")
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
+                
+            }//end of hstack
+            Spacer()
+        }//end of VStaack
         .padding()
-    }
-}
+    }//end of var body: some View
+}// end of view
 
 #Preview {
     ContentView()
